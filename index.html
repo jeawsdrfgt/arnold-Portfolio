@@ -232,10 +232,15 @@
       position: relative;
     }
     .avatar-initial {
-      font-size: 6rem; font-weight: 800;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-      background-clip: text;
+      width: 100%; height: 100%;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .avatar-initial img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
     }
     .avatar-badge {
       position: absolute; bottom: 10px; right: 10px;
@@ -526,8 +531,7 @@
     <h1 class="hero-name">Arnold Okatch<br>Ochieng</h1>
     <p class="hero-title" id="heroTitle"><span id="typedText"></span><span class="cursor"></span></p>
     <p class="hero-desc">
-      Software Developer with 2+ years of experience crafting frontend experiences and full-stack solutions
-      — from AI models to investor dashboards. Based in Nairobi, Kenya.
+      Software Developer with 2+ years of experience crafting frontend experiences and full-stack solutions, from AI models to investor dashboards. Based in Nairobi, Kenya.
     </p>
     <div class="hero-buttons">
       <a href="#projects" class="btn-primary"><i class="fas fa-code"></i>&nbsp; View My Work</a>
@@ -570,7 +574,7 @@
       <div>
         <div class="about-avatar">
           <div class="avatar-ring">
-            <span class="avatar-initial">A</span>
+            <span class="avatar-initial"><img src="images/arno.jpeg"> </span>
             <div class="avatar-badge">&#x1F1F0;&#x1F1EA; Kenya</div>
           </div>
         </div>
@@ -588,7 +592,7 @@
           impactful products for clients directly.
         </p>
         <p>
-          I spoke at <strong>DevFest Nairobi 2024</strong> on the future of cloud security with AI — and I'm always
+          I spoke at <strong>DevFest Nairobi 2024</strong> on the future of cloud security with AI, and I'm always
           exploring the intersection of emerging tech and real-world problems.
         </p>
         <div class="about-highlights">
@@ -812,7 +816,7 @@
         <div class="project-header">
           <span class="project-icon">&#x1F3A4;</span>
           <div class="project-links">
-            <a href="#" class="project-link" title="Live Site (add link)"><i class="fas fa-external-link-alt"></i></a>
+            <a href="reackysan.com" class="project-link" title="Live Site (add link)"><i class="fas fa-external-link-alt"></i></a>
           </div>
         </div>
         <div class="project-title">Reacky San — Artist Website</div>
@@ -942,10 +946,10 @@
         <div class="c-label">Portfolio</div>
         <div class="c-value">jeawsdrfgt.github.io</div>
       </a>
-      <a href="#" class="contact-card" title="Add your GitHub link">
+      <a href="https://github.com/jeawsdrfgt" class="contact-card" title="Add your GitHub link">
         <i class="fab fa-github"></i>
         <div class="c-label">GitHub</div>
-        <div class="c-value">Add your link</div>
+        <div class="c-value">jeawsdrfgt</div>
       </a>
     </div>
     <a href="mailto:okatcharnold@gmail.com" class="hire-cta reveal">
